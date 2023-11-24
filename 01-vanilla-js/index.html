@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS</title>
+    <style>
+        .app {
+            text-align: center;
+        }
+
+        .green-btn {
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <button id='button' onclick="changeButton('button')">
+            Click me
+        </button>
+    </div>
+    <script>
+        function changeButton(id) {
+            const button = document.getElementById(id)
+            button.textContent = 'Vanilla JS'
+            button.className = 'green-btn'
+        }
+    </script>
+</body>
+
+</html>
